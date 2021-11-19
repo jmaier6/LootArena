@@ -10,3 +10,9 @@ def wait_short():
 def format_strike_rate(avg):
 	avg_string = str(avg)
 	return avg_string
+
+
+def status():  # Print number of outs, inning number, score, and on-base statuses
+
+	print("The STATUS of the GAME")
+	wait()

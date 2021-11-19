@@ -7,6 +7,7 @@ from datetime import datetime
 from LA_userinputs import *
 from LoadAdventurers import *
 from Functions import *
+from CalculateAttackOutcome import *
 
 # Program start
 
@@ -57,3 +58,14 @@ wait()
 print("BEGIN!")
 wait()
 print("")
+wait()
+print("\033[1;93;40m" + adventurers["home"][0][0] + "\033[0m makes the first move for " + guilds["home"] + ".")
+wait()
+print()
+wait()
+
+status()
+
+while gameover == False:  # Main game loop
+    attack_result = calculate_attack_outcome(atbat_pitch_count, False, edge_pos, margin, redo_pitch_loops)
+    gameover==True
